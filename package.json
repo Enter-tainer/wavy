@@ -1,0 +1,21 @@
+{
+  "name": "qjs-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "bit-field": "^1.8.0",
+    "json5": "^2.2.3",
+    "onml": "^2.1.0",
+    "vite-plugin-singlefile": "^0.13.5",
+    "wavedrom": "^3.3.0"
+  }
+}
