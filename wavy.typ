@@ -1,6 +1,6 @@
 #import "@local/jogs:0.1.0": eval-js
 
-#set page(height: auto, width: auto, fill: black)
+#set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
 #let wavy-src = read("./dist/wavy.js")
@@ -17,6 +17,17 @@
 Typst, now with waves.
 
 ```wavy
+{
+  signal:
+  [
+    {name:'clk',wave:'p......'},
+    {name:'bus',wave:'x.34.5x',data:'head body tail'},
+    {name:'wire',wave:'0.1..0.'}
+  ]
+}
+```
+
+```js
 {
   signal:
   [
