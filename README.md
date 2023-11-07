@@ -1,6 +1,6 @@
-# Wavy
+# [Wavy](https://github.com/Enter-tainer/wavy)
 
-Draw digital timing diagram in Typst using Wavedrom.
+Draw digital timing diagram in Typst using [Wavedrom](https://wavedrom.com/).
 
 ![](wavy.svg)
 
