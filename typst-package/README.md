@@ -1,6 +1,9 @@
 # Wavy
 
-Port wavedrom to typst.
+Draw digital timing diagram in Typst using Wavedrom.
+
+![](wavy.svg)
+
 
 ````typ
 #import "./typst-package/lib.typ": render as wavy-render
@@ -39,7 +42,6 @@ Typst, now with waves.
 
 ````
 
-![](wavy.svg)
 
 ## Documentation
 
