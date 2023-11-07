@@ -1,12 +1,13 @@
-#import "@local/jogs:0.1.0": eval-js
+#import "@local/jogs:0.2.0": *
 
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
 #let wavy-src = read("./dist/wavy.js")
+#let wavy-bytecode = compile-js(wavy-src)
+
 #let render(src) = {
-  let to-be-eval = wavy-src + "render(`" + src + "`)"
-  let result = eval-js(to-be-eval)
+  let result = call-js-function(wavy-bytecode, "render", src)
   image.decode(result)
 }
 
