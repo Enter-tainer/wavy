@@ -1,17 +1,9 @@
-#import "@local/jogs:0.2.0": *
-
+#import "./typst-package/lib.typ": render as wavy-render
+// #import "@preview/wavy:0.1.0": render as wavy-render
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
-#let wavy-src = read("./dist/wavy.js")
-#let wavy-bytecode = compile-js(wavy-src)
-
-#let render(src) = {
-  let result = call-js-function(wavy-bytecode, "render", src)
-  image.decode(result)
-}
-
-#show raw.where(lang: "wavy"): it => render(it.text)
+#show raw.where(lang: "wavy"): it => wavy-render(it.text)
 
 = Wavy
 
