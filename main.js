@@ -13,8 +13,12 @@ function render(src) {
   }
   const source = json5.parse(src);
   const res = wavedrom.renderAny(0, source, skins);
+  const attrs = res[1]
+  if (!('xmlns' in attrs)) {
+    attrs.xmlns = "http://www.w3.org/2000/svg";
+  }
   const svg = onml.s(res);
   return svg
 }
 
-render(undefined) // to keep this function alive
+render(undefined);
