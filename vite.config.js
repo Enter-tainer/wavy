@@ -8,7 +8,7 @@ export default defineConfig({
     preserveSymlinks: true, // this is the fix!
   },
   build: {
-    minify: false,
+    minify: 'esbuild',
     cssCodeSplit: false,
     lib: {
       // Could also be a dictionary or array of multiple entry points
@@ -16,6 +16,7 @@ export default defineConfig({
       name: 'wavy',
       // the proper extensions will be added
       fileName: 'wavy',
+      formats: ['es', 'iife', 'umd', 'cjs'],
     },
   },
 });

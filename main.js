@@ -7,7 +7,7 @@ import json5 from "json5";
 
 const skins = Object.assign({}, def, narrow, lowkey);
 
-function render(src) {
+export default function render(src) {
   if (src === undefined) {
     return;
   }
@@ -20,5 +20,3 @@ function render(src) {
   const svg = onml.s(res);
   return svg
 }
-
-render(undefined);
