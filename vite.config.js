@@ -1,9 +1,18 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { viteSingleFile } from "vite-plugin-singlefile"
+import license from 'rollup-plugin-license'
 
 export default defineConfig({
-  plugins: [viteSingleFile()],
+  plugins: [
+    viteSingleFile(),
+    license({
+      thirdParty: {
+        includePrivate: false,
+        output: resolve(__dirname, 'dist/third-party-licenses.txt')
+      }
+    })
+  ],
   resolve: {
     preserveSymlinks: true, // this is the fix!
   },

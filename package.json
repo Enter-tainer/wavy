@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "rollup-plugin-license": "^3.2.0",
     "vite": "^4.4.5"
   },
   "dependencies": {
