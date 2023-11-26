@@ -3,7 +3,7 @@
 #let wavy-src = read("./wavy.js")
 #let wavy-bytecode = compile-js(wavy-src)
 
-#let render(src) = {
+#let render(src, ..args) = {
   let result = call-js-function(wavy-bytecode, "wavy", src)
-  image.decode(result)
+  image.decode(result, ..args)
 }

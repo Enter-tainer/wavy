@@ -4,7 +4,7 @@
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
-#show raw.where(lang: "wavy"): it => wavy-render(it.text)
+#show raw.where(lang: "wavy"): it => wavy-render(it.text, width: 10cm)
 
 = Wavy
 
