@@ -6,13 +6,12 @@ Draw digital timing diagram in Typst using [Wavedrom](https://wavedrom.com/).
 
 
 ````typ
-#import "./typst-package/lib.typ": render as wavy-render
-// #import "@preview/wavy:0.1.1": render as wavy-render
+#import "@preview/wavy:0.1.1"
 
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
-#show raw.where(lang: "wavy"): it => wavy-render(it.text)
+#show raw.where(lang: "wavy"): it => wavy.render(it.text)
 
 = Wavy
 

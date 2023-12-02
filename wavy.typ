@@ -1,10 +1,10 @@
-#import "./typst-package/lib.typ": render as wavy-render
+#import "./typst-package/lib.typ" as wavy
 // Uncomment the following line to use the wavy from the official package registry
-// #import "@preview/wavy:0.1.1": render as wavy-render
+// #import "@preview/wavy:0.1.1"
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
-#show raw.where(lang: "wavy"): it => wavy-render(it.text, width: 20cm)
+#show raw.where(lang: "wavy"): it => wavy.render(it.text, width: 20cm)
 
 = Wavy
 
