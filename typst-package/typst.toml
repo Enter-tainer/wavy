@@ -1,6 +1,6 @@
 [package]
 name = "wavy"
-version = "0.1.0"
+version = "0.1.1"
 entrypoint = "lib.typ"
 authors = ["Wenzhuo Liu"]
 license = "MIT"
