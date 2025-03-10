@@ -6,7 +6,7 @@ Draw digital timing diagram in Typst using [Wavedrom](https://wavedrom.com/).
 
 
 ````typ
-#import "@preview/wavy:0.1.1"
+#import "@preview/wavy:0.1.2"
 
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
