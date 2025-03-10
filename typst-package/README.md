@@ -51,7 +51,7 @@ Render a wavedrom json5 string to an image
 #### Arguments
 
 * `src`: `str` - wavedrom json5 string
-* All other arguments are passed to `image.decode` so you can customize the image size
+* All other arguments are passed to `image` so you can customize the image size
 
 #### Returns
 

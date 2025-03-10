@@ -5,5 +5,5 @@
 
 #let render(src, ..args) = {
   let result = call-js-function(wavy-bytecode, "wavy", src)
-  image.decode(result, ..args)
+  image(bytes(result), ..args)
 }
