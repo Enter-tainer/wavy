@@ -6,7 +6,7 @@ Draw digital timing diagram in Typst using [Wavedrom](https://wavedrom.com/).
 
 
 ````typ
-#import "@preview/wavy:0.1.1"
+#import "@preview/wavy:0.1.2"
 
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
@@ -51,7 +51,7 @@ Render a wavedrom json5 string to an image
 #### Arguments
 
 * `src`: `str` - wavedrom json5 string
-* All other arguments are passed to `image.decode` so you can customize the image size
+* All other arguments are passed to `image` so you can customize the image size
 
 #### Returns
 

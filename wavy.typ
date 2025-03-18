@@ -1,6 +1,6 @@
 #import "./typst-package/lib.typ" as wavy
 // Uncomment the following line to use the wavy from the official package registry
-// #import "@preview/wavy:0.1.1"
+// #import "@preview/wavy:0.1.2"
 #set page(height: auto, width: auto, fill: black, margin: 2em)
 #set text(fill: white)
 
