@@ -10,13 +10,13 @@
   },
   "devDependencies": {
     "rollup-plugin-license": "^3.2.0",
-    "vite": "^4.4.5"
+    "vite": "^6.2.5"
   },
   "dependencies": {
-    "bit-field": "^1.8.0",
+    "bit-field": "^1.9.0",
     "json5": "^2.2.3",
     "onml": "^2.1.0",
-    "vite-plugin-singlefile": "^0.13.5",
-    "wavedrom": "^3.3.0"
+    "vite-plugin-singlefile": "^2.2.0",
+    "wavedrom": "^3.5.0"
   }
 }
